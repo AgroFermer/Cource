@@ -28,6 +28,58 @@ const videoData = [
     title: 'Lessons 2',
     videoUrl: '/video/video2.mp4'
   },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
+  {
+    title: 'Lessons 2',
+    videoUrl: '/video/video2.mp4'
+  },
   // Добавьте другие видео в список
 ];
 
@@ -44,9 +96,16 @@ const [selectedVideo, setSelectedVideo] = useState(null);
             {selectedVideo && (
               <div>
                 <video className={styles.player} src={selectedVideo} controls />
+                <ul>
+                  <li><a href='/'>Description</a></li>
+                  <li><a href='/'>supply and support</a></li>
+                  <li><a href='/'>Suggestions</a></li>
+                  <li><a href='/'>Інструменти для навчання</a></li>
+                </ul>
               </div>
             )}
             <div className={styles.videoList}>
+               <h1>Materials of cource</h1>
               <ul>
                 {videoData.map((video, index) => (
                   <li className={styles.amb} key={index} onClick={() => handleVideoClick(video.videoUrl)}>

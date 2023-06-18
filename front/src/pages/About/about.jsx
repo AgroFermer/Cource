@@ -1,7 +1,11 @@
 import BaseLayout from "../../components/Sidebar/BaseLayout";
 
 const About = () => {
-  return <BaseLayout>About Page</BaseLayout>;
-};
+  return (
+    <BaseLayout>
+    <div>
+    </div>
+  </BaseLayout>
+  )};
 
 export default About;
